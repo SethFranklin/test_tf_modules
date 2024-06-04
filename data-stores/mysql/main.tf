@@ -1,6 +1,6 @@
 
 resource "aws_db_instance" "example" {
-  identifier_prefix   = var.db_name
+  identifier_prefix   = "newversion${var.db_name}"
   engine              = "mysql"
   allocated_storage   = 10
   instance_class      = "db.t3.micro"
